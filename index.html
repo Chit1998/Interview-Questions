@@ -9,9 +9,7 @@
                 margin: 0;
                 padding: 0;
             }
-
             .heading{
-                position: absolute;
                 width: 100%;
                 text-align: center;
                 font-family: sans-serif;
@@ -24,18 +22,27 @@
             }
             
             .questions{
-                position: absolute;
                 display: flex;
-                margin-top: 90px;
+                margin-top: 10px;
                 margin-left: 30;
             }
             .questions ol li{
                 margin: 10px 0 0 0;
             }
 
+            footer{
+                margin-top: 10px;
+                height: 40px;
+                align-content: end;
+                text-align: center;
+                background-color: cornflowerblue;
+            }
+            footer .footer{
+                margin-bottom: 10px;
+            }
+
             @media screen and (max-width: 480px) {
                 .heading{
-                    position: absolute;
                     width: 100%;
                     text-align: center;
                     font-family: sans-serif;
@@ -47,8 +54,7 @@
                     font-size: 20px;
                 }
                 .questions{
-                    position: absolute;
-                    margin-top: 70px;
+                    margin-top: 10px;
                     margin-left: 30;
                     margin-right: 10px;
                 }
@@ -56,14 +62,29 @@
                 .questions ol li{
                     margin: 5px 0 0 0;
                 }
+
+                footer{
+                    margin-top: 10px;
+                    height: 30px;
+                    align-content: end;
+                    text-align: center;
+                    background-color: cornflowerblue;
+                }
+
+                footer .footer{
+                    font-size: 14px;
+                    margin-bottom: 5px;
+                }
             }
 
         </style>
     </head>
     <body>
-        <div class="heading">
-            <h1>Android Interview Questions</h1>
-        </div>
+        <header>
+            <div class="heading">
+                <h1>Android Interview Questions</h1>
+            </div>
+        </header>
         <div class="questions">
             <ol>
                 <li><p>Landscape and portrait mode layout design how can I manage UI state ?</p></li>
@@ -98,7 +119,7 @@
                 <li><p>What's difference between StringBuilder and StringBuffer class ?</p></li>
                 <li><p>What's collections ?</p></li>
                 <li><p>Difference between MVC, MVP, and MVVM ?</p></li>
-                <li><p>What's difference between lateinit and lazy</p></li>
+                <li><p>What's difference between lateinit and lazy ?</p></li>
                 <li><p>How to optimize performance in android application ?</p></li>
                 <li><p>What's Extension function ?</p></li>
                 <li><p>What's Agile and scrum ?</p></li>
@@ -130,5 +151,10 @@
                 <li><p>what's migration in room database ? How can I achieve this.</p></li>
             </ol>
         </div>
+        <footer>
+            <div class="footer">
+                <p>All Rights Reserved. Copyright 2024</p>
+            </div>
+        </footer>
     </body>
 </html>
